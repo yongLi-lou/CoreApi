@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="P:Api.Auth.Identity.CurrentUser">
+            <summary>
+            当前登陆用户
+            </summary>
+        </member>
+        <member name="T:Api.Auth.Provider">
+            <summary>
+            token 操作
+            </summary>
+        </member>
+        <member name="M:Api.Auth.Provider.CreateToken(Qj.Dto.Base.QjCurrentUser)">
+            <summary>
+            创建Token
+            </summary>
+            <param name="qjUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Auth.Provider.ValidateToken(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="tokenKey"></param>
+            <param name="requestUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Success">
+            <summary>
+            操作成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Success(System.String)">
+            <summary>
+            操作成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.SuccessEntity``1(``0)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.FailEntity``1(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Success``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Fail``1(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Unauthorized">
+            <summary>
+            401
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Fail(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Fail(System.String,System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Error``1(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.ErrorEntity``1(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Error(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Error(System.String,System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Excute(System.Action)">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Excute(System.Func{Qj.Dto.Base.OperateResponse})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Excute``1(System.Func{Qj.Dto.Base.QjResponse{``0}})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.ExcuteEntity``1(System.Func{Qj.Dto.Base.ResponseEntity{``0}})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.UnCode">
+            <summary>
+            方法未实现
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Api.Common.BaseApiController.CurrentUser">
+            <summary>
+            当前登陆用户
+            </summary>
+        </member>
+        <member name="M:Api.Common.BaseApiController.Excute(System.Func{Qj.Dto.Base.QjObjectResponse})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.ErrorObject(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.ErrorEntityObject(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.FailObject(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.SuccessEntityObject(System.Object)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.SuccessObject(System.Collections.Generic.IEnumerable{System.Object},System.Int32)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.FailEntityObject(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Common.BaseApiController.ExcuteEntity(System.Func{Qj.Dto.Base.QjObjectResponseEntity})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.ModelStateExtensions.ExpendErrors(Microsoft.AspNetCore.Mvc.ControllerBase)">
+            <summary>
+            汇总错误信息
+            </summary>
+            <param name="controller"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.StaticConfig">
+            <summary>
+            配置数据
+            </summary>
+        </member>
+        <member name="P:Api.StaticConfig.FilePath">
+            <summary>
+            文件地址
+            </summary>
+        </member>
+        <member name="T:Api.ComplainController">
+            <summary>
+            投诉
+            </summary>
+        </member>
+        <member name="M:Api.ComplainController.GetList(System.Int32,System.Int32)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.ComplainController.GetModel(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="ID">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.ComplainController.ModelEdit(Qj.Dto.ComplainRequest)">
+            <summary>
+            编辑
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.ComplainController.ModelCreate(Qj.Dto.ComplainRequest)">
+            <summary>
+            数据创建
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.ComplainController.RemoveList(Qj.Dto.CommonRequest)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="Model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.CustomerServiceController">
+            <summary>
+            问题配置表
+            </summary>
+        </member>
+        <member name="M:Api.CustomerServiceController.GetModel(System.String)">
+            <summary>
+            提问
+            </summary>
+            <param name="UserQuestionName">用户提问</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.CustomerServiceController.GetList(System.Int32)">
+            <summary>
+            获取热门提问列表
+            </summary>
+            <param name="Size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.CustomerServiceController.ModelEdit(Api.AnswerLogRequest)">
+            <summary>
+            评论是否满意
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.ResponeCustomerService">
+            <summary>
+            提问返回值
+            </summary>
+        </member>
+        <member name="P:Api.ResponeCustomerService.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Api.ResponeCustomerService.Code">
+            <summary>
+            标识[0:模糊找出多个，1：精确为一个,2:未找到 list=null
+            </summary>
+        </member>
+        <member name="P:Api.ResponeCustomerService.Mssage">
+            <summary>
+            说明内容
+            </summary>
+        </member>
+        <member name="P:Api.ResponeCustomerService.QuestionName">
+            <summary>
+            返回匹配问题
+            </summary>
+        </member>
+        <member name="P:Api.AnswerLogRequest.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Api.AnswerLogRequest.IsSatisfaction">
+            <summary>
+            是否满意
+            </summary>
+        </member>
+        <member name="M:Api.AnswerLogRequest.ToEntity(Qj.Models.QuestionAnswerLog)">
+            <summary>
+            ToEntity
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.HotQuestionConfigController">
+            <summary>
+            热门问题
+            </summary>
+        </member>
+        <member name="M:Api.HotQuestionConfigController.GetList(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.HotQuestionConfigController.GetModel(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="ID">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.HotQuestionConfigController.ModelEdit(Qj.Dto.HotQuestionConfigRequest)">
+            <summary>
+            编辑
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.HotQuestionConfigController.ModelCreate(Qj.Dto.HotQuestionConfigRequest)">
+            <summary>
+            数据创建
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.HotQuestionConfigController.RemoveList(Qj.Dto.CommonRequest)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="Model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.QuestionAnswerLogController">
+            <summary>
+            问题回答记录
+            </summary>
+        </member>
+        <member name="M:Api.QuestionAnswerLogController.GetList(System.Int32,System.Int32)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.QuestionAnswerLogController.GetModel(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="ID">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.QuestionAnswerLogController.ModelEdit(Qj.Dto.QuestionAnswerLogRequest)">
+            <summary>
+            编辑
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.QuestionAnswerLogController.ModelCreate(Qj.Dto.QuestionAnswerLogRequest)">
+            <summary>
+            数据创建
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.QuestionAnswerLogController.RemoveList(Qj.Dto.CommonRequest)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="Model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.QuestionConfigController">
+            <summary>
+            问题配置表
+            </summary>
+        </member>
+        <member name="M:Api.QuestionConfigController.GetList(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.QuestionConfigController.GetModel(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="ID">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.QuestionConfigController.ModelEdit(Qj.Dto.QuestionConfigRequest)">
+            <summary>
+            编辑
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.QuestionConfigController.ModelCreate(Qj.Dto.QuestionConfigRequest)">
+            <summary>
+            数据创建
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.QuestionConfigController.RemoveList(Qj.Dto.CommonRequest)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="Model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.UserLoginController">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.UserLoginController.UserLogin(Qj.Dto.User.SysUserLoginRequest)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.UserLoginController.GetLoginInfo">
+            <summary>
+            获得登录信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.UserLoginController.EditPassword(Api.Controllers.SysUserEditPwdRequest)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.UserLoginController.UserDetail(Qj.Dto.User.SysUserRequest)">
+            <summary>
+            数据创建
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.UserLoginController.UserDelete(System.String)">
+            <summary>
+            软删除
+            </summary>
+            <param name="UserName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.SysUserEditPwdRequest">
+            <summary>
+            修改密码请求
+            </summary>
+        </member>
+        <member name="P:Api.Controllers.SysUserEditPwdRequest.UserNmae">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Api.Controllers.SysUserEditPwdRequest.OldPwd">
+            <summary>
+            原密码
+            </summary>
+        </member>
+        <member name="P:Api.Controllers.SysUserEditPwdRequest.NewPwd">
+            <summary>
+            新密码
+            </summary>
+        </member>
+        <member name="T:Api.Filters.AuthAttribute">
+            <summary>
+            权限判断
+            </summary>
+        </member>
+        <member name="P:Api.Filters.AuthAttribute.Validate">
+            <summary>
+            用户权限
+            </summary>
+        </member>
+        <member name="T:Api.Filters.TokenValidateFilter">
+            <summary>
+            读取Token
+            </summary>
+        </member>
+        <member name="P:Api.Filters.TokenValidateFilter.Order">
+            <summary>
+            越小优先级越高
+            </summary>
+        </member>
+        <member name="T:Api.LogAttribute">
+            <summary>
+            日志属性
+            </summary>
+        </member>
+        <member name="M:Api.LogAttribute.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Api.LogAttribute.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Api.LogAttribute.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Api.LogAttribute.#ctor(System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Api.LogAttribute.LogTitle">
+            <summary>
+            日志标题
+            </summary>
+        </member>
+        <member name="P:Api.LogAttribute.ModelName">
+            <summary>
+            模型名
+            </summary>
+        </member>
+        <member name="P:Api.LogAttribute.PropName">
+            <summary>
+            属性名
+            </summary>
+        </member>
+        <member name="M:Api.LogAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
+        <member name="M:Api.LogAttribute.FilterPropName(System.String)">
+            <summary>
+            过滤属性日志记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Models.AuditRequest">
+            <summary>
+            审核请求
+            </summary>
+        </member>
+        <member name="P:Api.Models.AuditRequest.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Api.Models.AuditRequest.Opinion">
+            <summary>
+            意见
+            </summary>
+        </member>
+        <member name="T:Api.Models.Filter.BusinessAcceptanceFilter">
+            <summary>
+            业务受理查询条件
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.BusinessAcceptanceFilter.index">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.BusinessAcceptanceFilter.size">
+            <summary>
+            每頁数量
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.BusinessAcceptanceFilter.eventName">
+            <summary>
+            事项名称
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.BusinessAcceptanceFilter.startDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.BusinessAcceptanceFilter.endDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.BusinessAcceptanceFilter.IsAccepance">
+            <summary>
+            是否已受理
+            </summary>
+        </member>
+        <member name="T:Api.Models.Filter.ReplenishLogFilter">
+            <summary>
+            补齐补正日志查询条件
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.ReplenishLogFilter.index">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.ReplenishLogFilter.size">
+            <summary>
+            每页数量
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.ReplenishLogFilter.startDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.ReplenishLogFilter.endDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.ReplenishLogFilter.name">
+            <summary>
+            申请人
+            </summary>
+        </member>
+        <member name="P:Api.Models.Filter.ReplenishLogFilter.IsRelenish">
+            <summary>
+            是否已补齐补正
+            </summary>
+        </member>
+        <member name="T:Api.Models.LoginResponse">
+            <summary>
+            登录返回
+            </summary>
+        </member>
+        <member name="P:Api.Models.LoginResponse.Token">
+            <summary>
+            登录Token
+            </summary>
+        </member>
+        <member name="T:Qj.Api.QiNiuHelper">
+            <summary>
+            七牛云
+            </summary>
+        </member>
+        <member name="P:Qj.Api.QiNiuHelper.Mac">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Qj.Api.QiNiuHelper.GetPrivateToken">
+            <summary>
+            创建私库上传token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Api.QiNiuHelper.GetPublicToken">
+            <summary>
+            创建私库上传token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Api.QiNiuHelper.GetPrivateUrl(System.String)">
+            <summary>
+            获得私有图片地址
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Api.QiNiuHelper.GetPublicUrl(System.String)">
+            <summary>
+            获得私有图片地址
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Api.QiNiuHelper.GetToken(System.String)">
+            <summary>
+            获得token
+            </summary>
+            <param name="bucket"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Api.QjQiniuController">
+            <summary>
+            nuget 引用Qiniu
+            </summary>
+        </member>
+        <member name="M:Qj.Api.QjQiniuController.GetPrivateToken">
+            <summary>
+            创建私库上传token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Api.QjQiniuController.GetPublicToken">
+            <summary>
+            创建公库上传token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Api.QjQiniuController.GetPrivateUrl(System.String)">
+            <summary>
+            创建私有图片地址
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Api.QjQiniuController.GetPublicUrl(System.String)">
+            <summary>
+            创建公共图片地址
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Api.Common.ApiJsonResult">
+            <summary>
+            ApiJson
+            </summary>
+        </member>
+        <member name="M:Qj.Api.Common.ApiJsonResult.#ctor(Qj.Api.Common.ApiJsonResult.ResultType)">
+            <summary>
+            ApiJson
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="P:Qj.Api.Common.ApiJsonResult.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:Qj.Api.Common.ApiJsonResult.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Qj.Api.Common.ApiJsonResult.count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Qj.Api.Common.ApiJsonResult.msg">
+            <summary>
+            消息文本
+            </summary>
+        </member>
+        <member name="M:Qj.Api.Common.ApiJsonResult.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Api.Common.ApiJsonResult.ResultType">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="F:Qj.Api.Common.ApiJsonResult.ResultType.SUCCESS">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:Qj.Api.Common.ApiJsonResult.ResultType.FAIL">
+            <summary>
+            失败
+            </summary>
+        </member>
+        <member name="F:Qj.Api.Common.ApiJsonResult.ResultType.ERROR">
+            <summary>
+            异常
+            </summary>
+        </member>
+        <member name="F:Qj.Api.Common.ApiJsonResult.ResultType.Unauthorized">
+            <summary>
+            认证失败
+            </summary>
+        </member>
+    </members>
+</doc>

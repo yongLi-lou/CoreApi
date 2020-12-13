@@ -1,0 +1,707 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Qj.Dto</name>
+    </assembly>
+    <members>
+        <member name="T:Qj.Dto.Base.OperateResponse">
+            <summary>
+            通用操作返回
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.OperateResponse.#ctor(Qj.Dto.Base.ResponseType)">
+             <summary>
+            
+             </summary>
+             <param name="type"></param>
+        </member>
+        <member name="P:Qj.Dto.Base.OperateResponse.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.OperateResponse.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.OperateResponse.msg">
+            <summary>
+            消息文本
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.OperateResponse.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Qj.Dto.Base.QjCurrentUser.ID">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjCurrentUser.Nickname">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjCurrentUser.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjCurrentUser.UserRole">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjCurrentUser.MenuName">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjCurrentUser.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjCurrentUser.DepartmentID">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjCurrentUser.DepartmentName">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjCurrentUser.ToString">
+            <summary>
+            转json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.Base.UserRoleEnum">
+            <summary>
+            用户角色类型
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.UserRoleEnum.Admin">
+            <summary>
+            管理员
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.UserRoleEnum.Other">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.UserRoleEnum.Principal">
+            <summary>
+            部门负责人
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.UserRoleEnum.FenGuanLeader">
+            <summary>
+            分管领导
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.UserRoleEnum.ZhuYaoleader">
+            <summary>
+            主要领导
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.UserRoleEnum.CentreFenGuanLeader">
+            <summary>
+            中心分管领导
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.UserRoleEnum.CentreZhuYaoleader">
+            <summary>
+            中心主要领导
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.UserRoleEnum.LobbyAdmin">
+            <summary>
+            大厅管理员
+            </summary>
+        </member>
+        <member name="T:Qj.Dto.Base.QjObjectResponse">
+            <summary>
+            通用查询返回
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjObjectResponse.#ctor(Qj.Dto.Base.ResponseType)">
+             <summary>
+            
+             </summary>
+             <param name="result"></param>
+        </member>
+        <member name="P:Qj.Dto.Base.QjObjectResponse.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjObjectResponse.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjObjectResponse.count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjObjectResponse.msg">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjObjectResponse.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.Base.QjObjectResponseEntity">
+            <summary>
+            通用查询，返回单条数据
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjObjectResponseEntity.#ctor(Qj.Dto.Base.ResponseType)">
+             <summary>
+            
+             </summary>
+             <param name="result"></param>
+        </member>
+        <member name="P:Qj.Dto.Base.QjObjectResponseEntity.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjObjectResponseEntity.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjObjectResponseEntity.msg">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjObjectResponseEntity.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.Base.QjResponse`1">
+            <summary>
+            通用查询返回
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjResponse`1.#ctor(Qj.Dto.Base.ResponseType)">
+             <summary>
+            
+             </summary>
+             <param name="result"></param>
+        </member>
+        <member name="P:Qj.Dto.Base.QjResponse`1.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjResponse`1.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjResponse`1.count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjResponse`1.msg">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjResponse`1.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.Base.QjResponseEntity`1">
+            <summary>
+            通用查询，返回单条数据
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjResponseEntity`1.#ctor(Qj.Dto.Base.ResponseType)">
+             <summary>
+            
+             </summary>
+             <param name="result"></param>
+        </member>
+        <member name="P:Qj.Dto.Base.QjResponseEntity`1.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjResponseEntity`1.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.QjResponseEntity`1.msg">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.QjResponseEntity`1.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.Base.ResponseData`1">
+            <summary>
+            通用查询返回
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.ResponseData`1.#ctor(Qj.Dto.Base.ResponseType)">
+             <summary>
+            
+             </summary>
+             <param name="result"></param>
+        </member>
+        <member name="P:Qj.Dto.Base.ResponseData`1.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.ResponseData`1.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.ResponseData`1.count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.ResponseData`1.msg">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.ResponseData`1.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.Base.ResponseEntity`1">
+            <summary>
+            通用查询，返回单条数据
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.ResponseEntity`1.#ctor(Qj.Dto.Base.ResponseType)">
+             <summary>
+            
+             </summary>
+             <param name="result"></param>
+        </member>
+        <member name="P:Qj.Dto.Base.ResponseEntity`1.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.ResponseEntity`1.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Base.ResponseEntity`1.msg">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Base.ResponseEntity`1.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.Base.ResponseType">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.ResponseType.SUCCESS">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.ResponseType.FAIL">
+            <summary>
+            失败
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.ResponseType.ERROR">
+            <summary>
+            异常
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.ResponseType.Unauthorized">
+            <summary>
+            认证失败
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.StaticLock.TokenLock">
+            <summary>
+            Token锁
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.StaticLock.UserRedisKeyPrefix">
+            <summary>
+            Redis key User
+            </summary>
+        </member>
+        <member name="F:Qj.Dto.Base.StaticLock.CacheRedisKeyPrefix">
+            <summary>
+            Redis key User
+            </summary>
+        </member>
+        <member name="T:Qj.Dto.CommonRequest">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.CommonRequest.IDS">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="T:Qj.Dto.CommonAndRemarkRequest">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Qj.Dto.CommonAndRemarkRequest.IDS">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.CommonAndRemarkRequest.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Qj.Dto.IntBaseDataDto">
+            <summary>
+            泛型Dto基类
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.IntBaseDataDto.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.IntBaseDataDto.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.IntBaseDataDto.InDate">
+            <summary>
+            录入时间
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.IntBaseDataDto.InUser">
+            <summary>
+            录入人
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.IntBaseDataDto.EditDate">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.IntBaseDataDto.EditUser">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="T:Qj.Dto.StrBaseDataDto">
+            <summary>
+            泛型Dto基类
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.StrBaseDataDto.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.StrBaseDataDto.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.StrBaseDataDto.InDate">
+            <summary>
+            录入时间
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.StrBaseDataDto.InUser">
+            <summary>
+            录入人
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.StrBaseDataDto.EditDate">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.StrBaseDataDto.EditUser">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="T:Qj.Dto.Sys_ConfigRequest">
+            <summary>
+            系统配置表
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigRequest.DataCode">
+            <summary>
+            数据编码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigRequest.DataName">
+            <summary>
+            数据名称
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigRequest.DataValue">
+            <summary>
+            数据值
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigRequest.DataGroupTag">
+            <summary>
+            数据分组标识
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigRequest.DataGroupMemo">
+            <summary>
+            数据分组说明
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigRequest.Sequence">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Sys_ConfigRequest.ToEntity">
+            <summary>
+            ToEntity
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Dto.Sys_ConfigRequest.ToEntity(Qj.Models.Sys_Config)">
+            <summary>
+            ToEntity
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.Sys_ConfigResponse">
+            <summary>
+            系统配置表
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigResponse.DataCode">
+            <summary>
+            数据编码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigResponse.DataName">
+            <summary>
+            数据名称
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigResponse.DataValue">
+            <summary>
+            数据值
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigResponse.DataGroupTag">
+            <summary>
+            数据分组标识
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigResponse.DataGroupMemo">
+            <summary>
+            数据分组说明
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.Sys_ConfigResponse.Sequence">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.Sys_ConfigResponse.FromEntity(Qj.Models.Sys_Config)">
+            <summary>
+            FromEntity
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.User.SysUserLoginRequest">
+            <summary>
+            SysUser登录
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserLoginRequest.userName">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserLoginRequest.password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.UserName">
+            <summary>
+            帐号
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.Phone">
+            <summary>
+            用户绑定的手机号
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.DepartmentID">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.IsDepartmentChargePerson">
+            <summary>
+            是否部门负责人
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.User.SysUserRequest.RoleIDs">
+            <summary>
+            角色id集合
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.User.SysUserRequest.ToEntity">
+            <summary>
+            ToEntity
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Qj.Dto.User.SysUserRequest.ToEntity(Qj.Models.SysUser)">
+            <summary>
+            ToEntity
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Qj.Dto.SysUserResponse">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.UserName">
+            <summary>
+            帐号
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.Phone">
+            <summary>
+            用户绑定的手机号
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.Name">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.LastLoginTime">
+            <summary>
+            上次登录时间
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.LoginTimes">
+            <summary>
+            登录次数
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.UserTypeNo">
+            <summary>
+            用户类型编号
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.DepartmentID">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.RoleIDs">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.DepartmentName">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:Qj.Dto.SysUserResponse.IsDepartmentChargePerson">
+            <summary>
+            是否部门负责人
+            </summary>
+        </member>
+        <member name="M:Qj.Dto.SysUserResponse.FromEntity(Qj.Models.SysUser)">
+            <summary>
+            FromEntity
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

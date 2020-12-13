@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BusinessAcceptanceDoMain.cs" />
+    <Compile Remove="BusinessAcceptanceMaterialDoMain.cs" />
+    <Compile Remove="BusinessAcceptanceService.cs" />
+    <Compile Remove="CoreDbContextLS.cs" />
+    <Compile Remove="ElectronicMaterialDoMain.cs" />
+    <Compile Remove="ReplenishLogDoMain.cs" />
+    <Compile Remove="ReplenishMaterialRequireDoMain.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="2.19.60" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Qj.Dto\Qj.Dto.csproj" />
+    <ProjectReference Include="..\Qj.Models\Qj.Models.csproj" />
+    <ProjectReference Include="..\Qj.Utility\Qj.Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>

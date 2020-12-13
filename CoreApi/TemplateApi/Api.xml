@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="P:TemplateApi.Auth.Identity.CurrentUser">
+            <summary>
+            当前登陆用户
+            </summary>
+        </member>
+        <member name="T:TemplateApi.Auth.Provider">
+            <summary>
+            token 操作
+            </summary>
+        </member>
+        <member name="M:TemplateApi.Auth.Provider.CreateToken(Qj.Dto.Base.QjCurrentUser)">
+            <summary>
+            创建Token
+            </summary>
+            <param name="qjUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Auth.Provider.ValidateToken(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="tokenKey"></param>
+            <param name="requestUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Success">
+            <summary>
+            操作成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Success(System.String)">
+            <summary>
+            操作成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.SuccessEntity``1(``0)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.FailEntity``1(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Success``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Fail``1(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Unauthorized">
+            <summary>
+            401
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Fail(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Fail(System.String,System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Error``1(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.ErrorEntity``1(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Error(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Error(System.String,System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Excute(System.Action)">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Excute(System.Func{Qj.Dto.Base.OperateResponse})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Excute``1(System.Func{Qj.Dto.Base.ResponseData{``0}})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.ExcuteEntity``1(System.Func{Qj.Dto.Base.ResponseEntity{``0}})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.UnCode">
+            <summary>
+            方法未实现
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TemplateApi.Common.BaseApiController.CurrentUser">
+            <summary>
+            当前登陆用户
+            </summary>
+        </member>
+        <member name="M:TemplateApi.ModelStateExtensions.ExpendErrors(Microsoft.AspNetCore.Mvc.ControllerBase)">
+            <summary>
+            汇总错误信息
+            </summary>
+            <param name="controller"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.Controllers.UserController">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserController.Get(System.String)">
+            <summary>
+            测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserController.Get2(System.String)">
+            <summary>
+            测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserController.Login(Qj.Dto.User.SysUserLoginRequest)">
+            <summary>
+            登录
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserController.Login2(Qj.Dto.CommonRequest)">
+            <summary>
+            登录
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserController.Login3(Qj.Dto.CommonRequest)">
+            <summary>
+            登录
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.Filters.AuthAttribute">
+            <summary>
+            权限判断
+            </summary>
+        </member>
+        <member name="T:TemplateApi.Filters.TokenValidateFilter">
+            <summary>
+            读取Token
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Filters.TokenValidateFilter.Order">
+            <summary>
+            越小优先级越高
+            </summary>
+        </member>
+        <member name="T:TemplateApi.LogAttribute">
+            <summary>
+            日志属性
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.#ctor(System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:TemplateApi.LogAttribute.LogTitle">
+            <summary>
+            日志标题
+            </summary>
+        </member>
+        <member name="P:TemplateApi.LogAttribute.ModelName">
+            <summary>
+            模型名
+            </summary>
+        </member>
+        <member name="P:TemplateApi.LogAttribute.PropName">
+            <summary>
+            属性名
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.FilterPropName(System.String)">
+            <summary>
+            过滤属性日志记录
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,223 @@
+2019-07-19 16:10:30,809 [7] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '2fac352efa274efb848f4de091001a85' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '2fac352efa274efb848f4de091001a85' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 307
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, ResultSetProtocol resultSetProtocol, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 292
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 37
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 267
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Qj.Core.ShortTimeGoOutApplyDoMain.AddApply(ShortTimeGoOutApply apply, Int32 userId) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Qj.Core\GoOutApply\ShortTimeGoOutApplyDoMain.cs:line 112
+   at TemplateApi.ShortTimeGoOutApplyController.<>c__DisplayClass3_0.<ModelCreate>b__0() in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Controllers\GouOutApply\ShortTimeGoOutApplyController.cs:line 125
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-07-19 16:17:45,810 [18] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+Qj.Core.QjCoreException: 未找到记录！
+   at Qj.Core.BaseDomain`1.EditDelBy[TEntity](Expression`1 delWhere, Int32 userId) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Qj.Core\BaseDomain.cs:line 556
+   at TemplateApi.ShortTimeGoOutApplyController.<>c__DisplayClass4_0.<RemoveList>b__0() in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Controllers\GouOutApply\ShortTimeGoOutApplyController.cs:line 144
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-07-19 16:18:20,771 [21] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+Qj.Core.QjCoreException: 未找到记录！
+   at Qj.Core.BaseDomain`1.EditDelBy[TEntity](Expression`1 delWhere, Int32 userId) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Qj.Core\BaseDomain.cs:line 556
+   at TemplateApi.ShortTimeGoOutApplyController.<>c__DisplayClass4_0.<RemoveList>b__0() in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Controllers\GouOutApply\ShortTimeGoOutApplyController.cs:line 144
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-07-19 19:09:45,306 [4] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry 'af22cfd9edfd422eac03b51ce9d42132' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry 'af22cfd9edfd422eac03b51ce9d42132' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 307
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, ResultSetProtocol resultSetProtocol, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 292
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 37
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 267
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Qj.Core.ShortTimeGoOutApplyDoMain.AddApply(ShortTimeGoOutApply apply, Int32 userId) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Qj.Core\GoOutApply\ShortTimeGoOutApplyDoMain.cs:line 112
+   at TemplateApi.ShortTimeGoOutApplyController.<>c__DisplayClass3_0.<ModelCreate>b__0() in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Controllers\GouOutApply\ShortTimeGoOutApplyController.cs:line 125
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-07-19 19:11:20,809 [27] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry 'af22cfd9edfd422eac03b51ce9d42132' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry 'af22cfd9edfd422eac03b51ce9d42132' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 307
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, ResultSetProtocol resultSetProtocol, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 292
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 37
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 267
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Qj.Core.ShortTimeGoOutApplyDoMain.AddApply(ShortTimeGoOutApply apply, Int32 userId) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Qj.Core\GoOutApply\ShortTimeGoOutApplyDoMain.cs:line 112
+   at TemplateApi.ShortTimeGoOutApplyController.<>c__DisplayClass3_0.<ModelCreate>b__0() in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Controllers\GouOutApply\ShortTimeGoOutApplyController.cs:line 125
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-07-19 19:30:51,348 [7] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry 'af22cfd9edfd422eac03b51ce9d42132' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry 'af22cfd9edfd422eac03b51ce9d42132' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 307
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, ResultSetProtocol resultSetProtocol, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 292
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 37
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 267
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Qj.Core.ShortTimeGoOutApplyDoMain.AddApply(ShortTimeGoOutApply apply, Int32 userId) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Qj.Core\GoOutApply\ShortTimeGoOutApplyDoMain.cs:line 126
+   at TemplateApi.ShortTimeGoOutApplyController.<>c__DisplayClass3_0.<ModelCreate>b__0() in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Controllers\GouOutApply\ShortTimeGoOutApplyController.cs:line 125
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-07-19 19:38:01,690 [6] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry 'af22cfd9edfd422eac03b51ce9d42132' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry 'af22cfd9edfd422eac03b51ce9d42132' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 307
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, ResultSetProtocol resultSetProtocol, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 292
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 37
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 267
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Qj.Core.ShortTimeGoOutApplyDoMain.AddApply(ShortTimeGoOutApply apply, Int32 userId) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Qj.Core\GoOutApply\ShortTimeGoOutApplyDoMain.cs:line 126
+   at TemplateApi.ShortTimeGoOutApplyController.<>c__DisplayClass3_0.<ModelCreate>b__0() in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Controllers\GouOutApply\ShortTimeGoOutApplyController.cs:line 125
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in E:\VisualStudioWorkspace\2017\洞头请假20190716\dongtouqingjia\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-07-24 10:50:19,433 [20] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 72
+   at TemplateApi.Common.BaseApiController.ExcuteEntity[T](Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 292
+2019-07-24 10:51:25,504 [6] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 72
+   at TemplateApi.Common.BaseApiController.ExcuteEntity[T](Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 292
+2019-07-24 16:04:19,587 [6] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.InvalidOperationException: Query source (from ItemsKeyWord <generated>_1 in [g]) has already been associated with an expression.
+   at Remotion.Linq.Clauses.QuerySourceMapping.AddMapping(IQuerySource querySource, Expression expression)
+   at Remotion.Linq.Clauses.MainFromClause.Clone(CloneContext cloneContext)
+   at Remotion.Linq.QueryModel.Clone(QuerySourceMapping querySourceMapping)
+   at Remotion.Linq.QueryModel.CloningExpressionVisitor.VisitSubQuery(SubQueryExpression expression)
+   at Remotion.Linq.Clauses.Expressions.SubQueryExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at System.Linq.Expressions.ExpressionVisitor.VisitAndConvert[T](ReadOnlyCollection`1 nodes, String callerName)
+   at Remotion.Linq.Parsing.RelinqExpressionVisitor.VisitNew(NewExpression expression)
+   at System.Linq.Expressions.NewExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Remotion.Linq.Clauses.SelectClause.TransformExpressions(Func`2 transformation)
+   at Remotion.Linq.QueryModel.TransformExpressions(Func`2 transformation)
+   at Remotion.Linq.QueryModel.Clone(QuerySourceMapping querySourceMapping)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryOptimizer.FlattenSubQuery(SubQueryExpression subQueryExpression, IFromClause fromClause, QueryModel queryModel, Int32 destinationIndex)
+   at Remotion.Linq.Transformations.SubQueryFromClauseFlattener.VisitMainFromClause(MainFromClause fromClause, QueryModel queryModel)
+   at Remotion.Linq.Clauses.MainFromClause.Accept(IQueryModelVisitor visitor, QueryModel queryModel)
+   at Remotion.Linq.QueryModelVisitorBase.VisitQueryModel(QueryModel queryModel)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryOptimizer.Optimize(QueryCompilationContext queryCompilationContext, QueryModel queryModel)
+   at Microsoft.EntityFrameworkCore.Query.EntityQueryModelVisitor.OptimizeQueryModel(QueryModel queryModel, Boolean asyncQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryModelVisitor.OptimizeQueryModel(QueryModel queryModel, Boolean asyncQuery)
+   at Microsoft.EntityFrameworkCore.Query.EntityQueryModelVisitor.CreateQueryExecutor[TResult](QueryModel queryModel)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](QueryModel queryModel)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](Expression query, IQueryModelGenerator queryModelGenerator, IDatabase database, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass13_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQueryCore[TFunc](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Remotion.Linq.QueryableBase`1.GetEnumerator()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Qj.Core.ItemsKeyWordDoMain.QueryKeyList(String UserQuestionName, Int32 rowcount) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Core\Sys\ItemsKeyWordDoMain.cs:line 35
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 98
+   at TemplateApi.Common.BaseApiController.ExcuteEntity[T](Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 292
+2019-07-26 12:30:24,272 [6] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at System.String.IndexOf(String value, Int32 startIndex, Int32 count, StringComparison comparisonType)
+   at System.String.Contains(String value)
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__3(QuestionConfig e) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 61
+   at System.Linq.Enumerable.WhereListIterator`1.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 61
+   at TemplateApi.Common.BaseApiController.ExcuteEntity[T](Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 292
+2019-07-26 12:30:39,441 [6] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at System.String.IndexOf(String value, Int32 startIndex, Int32 count, StringComparison comparisonType)
+   at System.String.Contains(String value)
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__3(QuestionConfig e) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 61
+   at System.Linq.Enumerable.WhereListIterator`1.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 61
+   at TemplateApi.Common.BaseApiController.ExcuteEntity[T](Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 292
+2019-07-26 12:31:05,656 [17] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.TypeInitializationException: The type initializer for 'TemplateApi.CustomerServiceController' threw an exception. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Qj.Utility.Helper.JsonConfigHelper.GetValue(String key) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Utility\Helper\JsonConfigHelper.cs:line 42
+   at Qj.Utility.Helper.JsonConfigHelper.get_Item(String key) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Utility\Helper\JsonConfigHelper.cs:line 20
+   at TemplateApi.CustomerServiceController..cctor() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 29
+   --- End of inner exception stack trace ---
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 98
+   at TemplateApi.Common.BaseApiController.ExcuteEntity[T](Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 292
+2019-07-26 12:31:23,065 [17] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.TypeInitializationException: The type initializer for 'TemplateApi.CustomerServiceController' threw an exception. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Qj.Utility.Helper.JsonConfigHelper.GetValue(String key) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Utility\Helper\JsonConfigHelper.cs:line 42
+   at Qj.Utility.Helper.JsonConfigHelper.get_Item(String key) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Utility\Helper\JsonConfigHelper.cs:line 20
+   at TemplateApi.CustomerServiceController..cctor() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 29
+   --- End of inner exception stack trace ---
+   at TemplateApi.CustomerServiceController.<>c__DisplayClass3_0.<GetModel>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\Sys\CustomerServiceController.cs:line 98
+   at TemplateApi.Common.BaseApiController.ExcuteEntity[T](Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 292
+2019-10-25 10:50:13,452 [18] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.Exception: 存在相同的账号，无法保存。
+   at Qj.Core.SysUserDoMain.AddUser(SysUser user, Int32 userId) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Core\Sys\SysUserDoMain.cs:line 143
+   at TemplateApi.Controllers.UserLoginController.<>c__DisplayClass3_0.<UserDetail>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\UserLoginController.cs:line 120
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-10-25 10:50:36,789 [7] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.Exception: 存在相同的账号，无法保存。
+   at Qj.Core.SysUserDoMain.AddUser(SysUser user, Int32 userId) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Core\Sys\SysUserDoMain.cs:line 143
+   at TemplateApi.Controllers.UserLoginController.<>c__DisplayClass3_0.<UserDetail>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\UserLoginController.cs:line 120
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-10-25 10:52:38,020 [7] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.Exception: 存在相同的账号，无法保存。
+   at Qj.Core.SysUserDoMain.AddUser(SysUser user, Int32 userId) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Core\Sys\SysUserDoMain.cs:line 143
+   at TemplateApi.Controllers.UserLoginController.<>c__DisplayClass3_0.<UserDetail>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\UserLoginController.cs:line 120
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 216
+2019-10-28 11:20:07,170 [16] ERROR TemplateApi.Common.BaseApiController [(null)] - 出现未处理异常
+System.Exception: 存在相同的账号，无法保存。
+   at Qj.Core.SysUserDoMain.AddUser(SysUser user, Int32 userId) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Qj.Core\Sys\SysUserDoMain.cs:line 160
+   at TemplateApi.Controllers.UserLoginController.<>c__DisplayClass3_0.<UserDetail>b__0() in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Controllers\UserLoginController.cs:line 123
+   at TemplateApi.Common.BaseApiController.Excute(Func`1 action) in D:\工作\洞头基层站点\dongtouzhinengkefu\CoreApi\Api\Common\BaseApiController.cs:line 216

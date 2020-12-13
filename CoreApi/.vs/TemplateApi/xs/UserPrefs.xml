@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{6F9DC7C3-419A-492A-8E5D-B63934D7D69D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Qj.Core/CoreDbContext.cs">
+    <Files>
+      <File FileName="Qj.Core/Sys/SysUserDoMain.cs" Line="203" Column="40" />
+      <File FileName="Qj.Models/Sys/SysUser.cs" Line="11" Column="33" />
+      <File FileName="Qj.Models/IntBaseEntity.cs" Line="16" Column="18" />
+      <File FileName="TemplateApi/Controllers/UserLoginController.cs" Line="153" Column="1" />
+      <File FileName="TemplateApi/Startup.cs" Line="1" Column="1" />
+      <File FileName="TemplateApi/appsettings.json" Line="5" Column="112" />
+      <File FileName="Qj.Core/CoreDbContext.cs" Line="10" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TemplateApi" expanded="True">
+            <Node name="API" expanded="True">
+              <Node name="TemplateApi" expanded="True" />
+            </Node>
+            <Node name="Qj.Core" expanded="True">
+              <Node name="Sys" expanded="True" />
+              <Node name="CoreDbContext.cs" selected="True" />
+            </Node>
+            <Node name="Qj.Models" expanded="True">
+              <Node name="Sys" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.HelperProgram.ConsoleApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

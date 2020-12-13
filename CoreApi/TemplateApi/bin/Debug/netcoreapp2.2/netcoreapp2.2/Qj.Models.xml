@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Qj.Models</name>
+    </assembly>
+    <members>
+        <member name="T:Qj.Models.IntBaseEntity">
+            <summary>
+            Entity基类
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.InDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.InUser">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.EditDate">
+            <summary>
+            修改日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.EditUser">
+            <summary>
+            修改用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:Qj.Models.StrBaseEntity">
+            <summary>
+            Entity基类
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.InDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.InUser">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.EditDate">
+            <summary>
+            修改日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.EditUser">
+            <summary>
+            修改用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:Qj.Models.SysUser">
+            <summary>
+            系统用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.UserName">
+            <summary>
+            帐号
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.Phone">
+            <summary>
+            用户绑定的手机号
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.Name">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.LastLoginTime">
+            <summary>
+            上次登录时间
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.LoginTimes">
+            <summary>
+            登录次数
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.DepartmentID">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.SysUser.IsDepartmentChargePerson">
+            <summary>
+            是否部门负责人
+            </summary>
+        </member>
+        <member name="M:Qj.Models.SysUser.Login">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="T:Qj.Models.SysUserRole">
+            <summary>
+            用户角色枚举
+            </summary>
+        </member>
+        <member name="F:Qj.Models.SysUserRole.User">
+            <summary>
+            普通用户
+            </summary>
+        </member>
+        <member name="F:Qj.Models.SysUserRole.Admin">
+            <summary>
+            管理员
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Sys_Config">
+            <summary>
+            系统配置表
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_Config.DataCode">
+            <summary>
+            数据编码
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_Config.DataName">
+            <summary>
+            数据名称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_Config.DataValue">
+            <summary>
+            数据值
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_Config.DataGroupTag">
+            <summary>
+            数据分组标识
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_Config.DataGroupMemo">
+            <summary>
+            数据分组说明
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_Config.Sequence">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Sys_OperationLog">
+            <summary>
+            系统操作日志
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ActionName">
+            <summary>
+            方法名称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ControllerName">
+            <summary>
+            控制器名称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ActionParameters">
+            <summary>
+            方法参数
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ActionBody">
+            <summary>
+            方法内容
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ModuleName">
+            <summary>
+            操作模块描述
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.Option">
+            <summary>
+            操作动作
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.OptionRemarks">
+            <summary>
+            操作备注
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.IP">
+            <summary>
+            IP
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.LogResult">
+            <summary>
+            执行结果
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.LogUrl">
+            <summary>
+            访问地址
+            </summary>
+        </member>
+        <member name="M:Qj.Models.Sys_OperationLog.Update(Qj.Models.Sys_OperationLog)">
+            <summary>
+            Update
+            </summary>
+            <param name="model"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,904 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Qj.Models</name>
+    </assembly>
+    <members>
+        <member name="P:Qj.Models.BaseModel.CreatorId">
+            <summary>
+            创建人Id string
+            </summary>
+        </member>
+        <member name="P:Qj.Models.BaseModel.CreatorName">
+            <summary>
+            创建人 string
+            </summary>
+        </member>
+        <member name="P:Qj.Models.BaseModel.CreateDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.BaseModel.EditorId">
+            <summary>
+            编辑人Id string
+            </summary>
+        </member>
+        <member name="P:Qj.Models.BaseModel.EditorName">
+            <summary>
+            编辑人 string
+            </summary>
+        </member>
+        <member name="P:Qj.Models.BaseModel.EditDate">
+            <summary>
+            编辑日期
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Collection.Collection_Info">
+            <summary>
+            用户收藏
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Collection.Collection_Info.ShopInfoId">
+            <summary>
+            商家ID
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Demand.Demand_Info">
+            <summary>
+            需求信息
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info.Theme">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info.TotalAmount">
+            <summary>
+            预期金额
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info.SupplyTime">
+            <summary>
+            供货时间
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info.Phone">
+            <summary>
+            联系方式
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info.Number">
+            <summary>
+            商品总数量
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info.IsRelease">
+            <summary>
+            是否发布
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info.SignUpCount">
+            <summary>
+            报名人数
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Demand.Demand_Info_Detail">
+            <summary>
+            需求明细表
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info_Detail.DemandInfoId">
+            <summary>
+            需求表ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info_Detail.Name">
+            <summary>
+            商品名称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info_Detail.Number">
+            <summary>
+            商品数量
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info_Detail.Price">
+            <summary>
+            商品价格
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info_Detail.ShopInfoId">
+            <summary>
+            商家ID
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Demand.Demand_Info_Signup">
+            <summary>
+            需求信息报名
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info_Signup.DemandInfoId">
+            <summary>
+            需求表ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Demand.Demand_Info_Signup.ShopInfoId">
+            <summary>
+            商家ID
+            </summary>
+        </member>
+        <member name="T:Qj.Models.IntBaseEntity">
+            <summary>
+            Entity基类
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.InDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.InUser">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.EditDate">
+            <summary>
+            修改日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.EditUser">
+            <summary>
+            修改用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.IntBaseEntity.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Order.Order_Info">
+            <summary>
+            订单基本信息
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.OrderNo">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.ShopInfoId">
+            <summary>
+            商家ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.TotalAmount">
+            <summary>
+            订单总金额
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.Handsel">
+            <summary>
+            订单定金
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.Remarks">
+            <summary>
+            订单备注
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.PayTime">
+            <summary>
+            支付时间
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.PlaceOrderTime">
+            <summary>
+            下单时间
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.ReturnTime">
+            <summary>
+            退款时间
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.PayType">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.Address">
+            <summary>
+            交易地址
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info.Status">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Order.Order_Info_Detail">
+            <summary>
+            订单明细
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Detail.OrderId">
+            <summary>
+            订单ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Detail.Price">
+            <summary>
+            商品单价
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Detail.Number">
+            <summary>
+            商品数量
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Detail.TotalAmount">
+            <summary>
+            商品总金额
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Order.Order_Info_Evaluate">
+            <summary>
+            订单评价
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Evaluate.OrderId">
+            <summary>
+            订单ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Evaluate.Content">
+            <summary>
+            评价内容
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Evaluate.StarNumber">
+            <summary>
+            好评星数
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Order.Order_Info_OperationLog">
+            <summary>
+            订单操作日志
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_OperationLog.OrderId">
+            <summary>
+            订单ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_OperationLog.Status">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Order.Order_Info_Payment">
+            <summary>
+            订单支付记录
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Payment.OrderId">
+            <summary>
+            订单ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Order.Order_Info_Payment.PayType">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.Id">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.Group1">
+            <summary>
+            组别Id1
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.GroupValue1">
+            <summary>
+            组别名称1
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.Group2">
+            <summary>
+            组别Id2
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.GroupValue2">
+            <summary>
+            组别名称2
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.DispositionId">
+            <summary>
+            性格
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.DispositionValue">
+            <summary>
+            性格名称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.User">
+            <summary>
+            所属用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.VNum">
+            <summary>
+            V个数
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.HP">
+            <summary>
+            HPV
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.ATK">
+            <summary>
+            攻击V
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.DEF">
+            <summary>
+            防御V
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.STK">
+            <summary>
+            特攻V
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.SEF">
+            <summary>
+            特防V
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Pokemmo.Pokemmo.SPD">
+            <summary>
+            速度V
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Hardy">
+            <summary>
+            勤奋
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Lonely">
+            <summary>
+            怕寂寞
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Brave">
+            <summary>
+            勇敢
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Adamant">
+            <summary>
+            固执
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Naughty">
+            <summary>
+            顽皮
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Bold">
+            <summary>
+            大胆
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Docile">
+            <summary>
+            坦率
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Relaxed">
+            <summary>
+            悠闲
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Impish">
+            <summary>
+            淘气
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Lax">
+            <summary>
+            乐天
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Timid">
+            <summary>
+            胆小
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Hasty">
+            <summary>
+            急躁
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Serious">
+            <summary>
+            认真
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Jolly">
+            <summary>
+            爽朗
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Naive">
+            <summary>
+            天真
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Modest">
+            <summary>
+            内敛
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Mild">
+            <summary>
+            慢吞吞
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Quiet">
+            <summary>
+            冷静
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Bashful">
+            <summary>
+            害羞
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Rash">
+            <summary>
+            马虎
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Calm">
+            <summary>
+            温和
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Gentle">
+            <summary>
+            温顺
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Sassy">
+            <summary>
+            自大
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Careful">
+            <summary>
+            慎重
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Disposition.Quirky">
+            <summary>
+            浮躁
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.WaterOne">
+            <summary>
+            水1组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.WaterTwo">
+            <summary>
+            水2组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.WaterThree">
+            <summary>
+            水3组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Dragon">
+            <summary>
+            龙组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Insect">
+            <summary>
+            虫组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.OnLand">
+            <summary>
+            陆上组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Unshaped">
+            <summary>
+            不定性组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Plant">
+            <summary>
+            植物组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Fairy">
+            <summary>
+            妖精组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Flight">
+            <summary>
+            飞行组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Human">
+            <summary>
+            人形组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Mineral">
+            <summary>
+            矿物组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Monster">
+            <summary>
+            怪兽组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.NoGender">
+            <summary>
+            无性别组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.NotFound">
+            <summary>
+            未发现组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.Group.Variety">
+            <summary>
+            百变怪组
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.SexType.Male">
+            <summary>
+            公
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Pokemmo.SexType.Female">
+            <summary>
+            母
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Product.Product_Category">
+            <summary>
+            商品类别
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Product.Product_Category.Name">
+            <summary>
+            类别名称
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Product.Pruduct_Info">
+            <summary>
+            商品基本信息
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Product.Pruduct_Info.Name">
+            <summary>
+            商品名称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Product.Pruduct_Info.Number">
+            <summary>
+            商品数量
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Product.Pruduct_Info.Price">
+            <summary>
+            商品价格
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Product.Pruduct_Info.SurplusNumber">
+            <summary>
+            剩余商品数量
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Product.Pruduct_Info.IsSelf">
+            <summary>
+            是否上架
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Product.Pruduct_Info.ShopInfoId">
+            <summary>
+            商家ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Product.Pruduct_Info.CategoryId">
+            <summary>
+            分类ID
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Shop.Shop_Info">
+            <summary>
+            商家基本信息
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Shop.Shop_Info.ShopImg">
+            <summary>
+            门店照片
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Shop.Shop_Info.Nickname">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Shop.Shop_Info.Phone">
+            <summary>
+            联系方式
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Shop.Shop_Info.Adress">
+            <summary>
+            我的地址
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Shop.Shop_Info.MainShop">
+            <summary>
+            我的主营
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Shop.Shop_Info.Announcement">
+            <summary>
+            公告
+            </summary>
+        </member>
+        <member name="T:Qj.Models.StrBaseEntity">
+            <summary>
+            Entity基类
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.InDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.InUser">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.EditDate">
+            <summary>
+            修改日期
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.EditUser">
+            <summary>
+            修改用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.StrBaseEntity.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:Qj.Models.PayType">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="F:Qj.Models.PayType.FSHL">
+            <summary>
+            丰收互联
+            </summary>
+        </member>
+        <member name="F:Qj.Models.PayType.DMJY">
+            <summary>
+            当面交易
+            </summary>
+        </member>
+        <member name="T:Qj.Models.OrderStatus">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="F:Qj.Models.OrderStatus.DZF">
+            <summary>
+            待支付
+            </summary>
+        </member>
+        <member name="F:Qj.Models.OrderStatus.JDY">
+            <summary>
+            阶段一支付完成
+            </summary>
+        </member>
+        <member name="F:Qj.Models.OrderStatus.JDE">
+            <summary>
+            阶段二支付完成
+            </summary>
+        </member>
+        <member name="F:Qj.Models.OrderStatus.DDGB">
+            <summary>
+            订单关闭
+            </summary>
+        </member>
+        <member name="F:Qj.Models.OrderStatus.DDQX">
+            <summary>
+            订单取消
+            </summary>
+        </member>
+        <member name="F:Qj.Models.OrderStatus.DDTK">
+            <summary>
+            订单退款
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Sys.SysUser">
+            <summary>
+            系统用户
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys.SysUser.UserName">
+            <summary>
+            帐号
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys.SysUser.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys.SysUser.Phone">
+            <summary>
+            用户绑定的手机号
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys.SysUser.Nickname">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys.SysUser.LastLoginTime">
+            <summary>
+            上次登录时间
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys.SysUser.LoginTimes">
+            <summary>
+            登录次数
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys.SysUser.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="M:Qj.Models.Sys.SysUser.Login">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Sys.SysUserRole.User">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="F:Qj.Models.Sys.SysUserRole.ShopUser">
+            <summary>
+            商家
+            </summary>
+        </member>
+        <member name="T:Qj.Models.Sys_OperationLog">
+            <summary>
+            系统操作日志
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ActionName">
+            <summary>
+            方法名称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ControllerName">
+            <summary>
+            控制器名称
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ActionParameters">
+            <summary>
+            方法参数
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ActionBody">
+            <summary>
+            方法内容
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.ModuleName">
+            <summary>
+            操作模块描述
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.Option">
+            <summary>
+            操作动作
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.OptionRemarks">
+            <summary>
+            操作备注
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.IsLog">
+            <summary>
+            是否记录在库
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.IP">
+            <summary>
+            IP
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.LogResult">
+            <summary>
+            执行结果
+            </summary>
+        </member>
+        <member name="P:Qj.Models.Sys_OperationLog.LogUrl">
+            <summary>
+            访问地址
+            </summary>
+        </member>
+        <member name="M:Qj.Models.Sys_OperationLog.Update(Qj.Models.Sys_OperationLog)">
+            <summary>
+            Update
+            </summary>
+            <param name="model"></param>
+        </member>
+    </members>
+</doc>

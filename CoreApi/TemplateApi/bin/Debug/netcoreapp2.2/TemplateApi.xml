@@ -1,0 +1,730 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TemplateApi</name>
+    </assembly>
+    <members>
+        <member name="P:TemplateApi.Auth.Identity.CurrentUser">
+            <summary>
+            当前登陆用户
+            </summary>
+        </member>
+        <member name="T:TemplateApi.Auth.Provider">
+            <summary>
+            token 操作
+            </summary>
+        </member>
+        <member name="M:TemplateApi.Auth.Provider.CreateToken(Qj.Dto.Base.QjCurrentUser)">
+            <summary>
+            创建Token
+            </summary>
+            <param name="qjUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Auth.Provider.CreateCache(System.String,System.Object)">
+            <summary>
+            创建缓存数据
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Auth.Provider.ValidateToken(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="tokenKey"></param>
+            <param name="requestUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Success">
+            <summary>
+            操作成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Success(System.String)">
+            <summary>
+            操作成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.SuccessEntity``1(``0)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.FailEntity``1(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Success``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Fail``1(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Unauthorized">
+            <summary>
+            401
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Fail(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Fail(System.String,System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Error``1(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.ErrorEntity``1(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Error(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Error(System.String,System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Excute(System.Action)">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Excute(System.Func{Qj.Dto.Base.OperateResponse})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Excute``1(System.Func{Qj.Dto.Base.QjResponse{``0}})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.ExcuteEntity``1(System.Func{Qj.Dto.Base.ResponseEntity{``0}})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.UnCode">
+            <summary>
+            方法未实现
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TemplateApi.Common.BaseApiController.CurrentUser">
+            <summary>
+            当前登陆用户
+            </summary>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.Excute(System.Func{Qj.Dto.Base.QjObjectResponse})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.ErrorObject(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.ErrorEntityObject(System.String)">
+            <summary>
+            操作警告
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.FailObject(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.SuccessEntityObject(System.Object)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.SuccessObject(System.Collections.Generic.IEnumerable{System.Object},System.Int32)">
+            <summary>
+            返回结果集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.FailEntityObject(System.String)">
+            <summary>
+            操作失败
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Common.BaseApiController.ExcuteEntity(System.Func{Qj.Dto.Base.QjObjectResponseEntity})">
+            <summary>
+            运行操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.Common.ApiJsonResult">
+            <summary>
+            ApiJson
+            </summary>
+        </member>
+        <member name="M:TemplateApi.Common.ApiJsonResult.#ctor(TemplateApi.Common.ApiJsonResult.ResultType)">
+            <summary>
+            ApiJson
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="P:TemplateApi.Common.ApiJsonResult.code">
+            <summary>
+            结果代码
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Common.ApiJsonResult.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Common.ApiJsonResult.count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Common.ApiJsonResult.msg">
+            <summary>
+            消息文本
+            </summary>
+        </member>
+        <member name="M:TemplateApi.Common.ApiJsonResult.ToString">
+            <summary>
+            输出json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.Common.ApiJsonResult.ResultType">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="F:TemplateApi.Common.ApiJsonResult.ResultType.SUCCESS">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:TemplateApi.Common.ApiJsonResult.ResultType.FAIL">
+            <summary>
+            失败
+            </summary>
+        </member>
+        <member name="F:TemplateApi.Common.ApiJsonResult.ResultType.ERROR">
+            <summary>
+            异常
+            </summary>
+        </member>
+        <member name="F:TemplateApi.Common.ApiJsonResult.ResultType.Unauthorized">
+            <summary>
+            认证失败
+            </summary>
+        </member>
+        <member name="M:TemplateApi.ModelStateExtensions.ExpendErrors(Microsoft.AspNetCore.Mvc.ControllerBase)">
+            <summary>
+            汇总错误信息
+            </summary>
+            <param name="controller"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.QiNiuHelper">
+            <summary>
+            七牛云
+            </summary>
+        </member>
+        <member name="P:TemplateApi.QiNiuHelper.Mac">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:TemplateApi.QiNiuHelper.GetPrivateToken">
+            <summary>
+            创建私库上传token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QiNiuHelper.GetPublicToken">
+            <summary>
+            创建私库上传token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QiNiuHelper.GetPrivateUrl(System.String)">
+            <summary>
+            获得私有图片地址
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QiNiuHelper.GetPublicUrl(System.String)">
+            <summary>
+            获得私有图片地址
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QiNiuHelper.GetToken(System.String)">
+            <summary>
+            获得token
+            </summary>
+            <param name="bucket"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.StaticConfig">
+            <summary>
+            配置数据
+            </summary>
+        </member>
+        <member name="P:TemplateApi.StaticConfig.FilePath">
+            <summary>
+            文件地址
+            </summary>
+        </member>
+        <member name="F:TemplateApi.StaticConfig.AESKey">
+            <summary>
+            密钥AES加密
+            </summary>
+        </member>
+        <member name="F:TemplateApi.StaticConfig.AESIV">
+            <summary>
+            初始向量AES加密
+            </summary>
+        </member>
+        <member name="T:TemplateApi.QjQiniuController">
+            <summary>
+            nuget 引用Qiniu
+            </summary>
+        </member>
+        <member name="M:TemplateApi.QjQiniuController.GetPrivateToken">
+            <summary>
+            创建私库上传token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QjQiniuController.GetPublicToken">
+            <summary>
+            创建公库上传token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QjQiniuController.GetPrivateUrl(System.String)">
+            <summary>
+            创建私有图片地址
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QjQiniuController.GetPublicUrl(System.String)">
+            <summary>
+            创建公共图片地址
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QjQiniuController.UploadFile(System.Byte[],System.String)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="byteData"></param>
+            <param name="FileName">文件名</param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.QjQiniuController.UploadFilePath(System.String)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="FileName">文件名</param>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.ImgResponse">
+            <summary>
+            上传文件返回
+            </summary>
+        </member>
+        <member name="P:TemplateApi.ImgResponse.hash">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:TemplateApi.ImgResponse.key">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:TemplateApi.Sys_ConfigController">
+            <summary>
+            系统配置表
+            </summary>
+        </member>
+        <member name="M:TemplateApi.Sys_ConfigController.GetList(System.Int32,System.Int32)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Sys_ConfigController.GetModel(System.String,System.String)">
+            <summary>
+            获取数据配置值
+            </summary>
+            <param name="dataGroupTag">分组名称</param>
+            <param name="dataName">数据名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Sys_ConfigController.GetModel(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="ID">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Sys_ConfigController.ModelEdit(Qj.Dto.Sys_ConfigRequest)">
+            <summary>
+            编辑
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Sys_ConfigController.ModelCreate(Qj.Dto.Sys_ConfigRequest)">
+            <summary>
+            数据创建
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Sys_ConfigController.RemoveList(Qj.Dto.CommonRequest)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="Model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.TestController.Test(System.String)">
+            <summary>
+            测试
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.TestController.Test(TemplateApi.Controllers.testmodel)">
+            <summary>
+            测试
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.Controllers.UserLoginController">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserLoginController.UserLogin(Qj.Dto.User.SysUserLoginRequest)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserLoginController.GetLoginInfo">
+            <summary>
+            获得登录信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserLoginController.EditPassword(TemplateApi.Controllers.SysUserEditPwdRequest)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserLoginController.UserDetail(Qj.Dto.User.SysUserRequest)">
+            <summary>
+            数据创建
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TemplateApi.Controllers.UserLoginController.UserDelete(System.String)">
+            <summary>
+            软删除
+            </summary>
+            <param name="UserName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.Controllers.SysUserEditPwdRequest">
+            <summary>
+            修改密码请求
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Controllers.SysUserEditPwdRequest.UserNmae">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Controllers.SysUserEditPwdRequest.OldPwd">
+            <summary>
+            原密码
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Controllers.SysUserEditPwdRequest.NewPwd">
+            <summary>
+            新密码
+            </summary>
+        </member>
+        <member name="T:TemplateApi.Filters.AuthAttribute">
+            <summary>
+            权限判断
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Filters.AuthAttribute.Validate">
+            <summary>
+            用户权限
+            </summary>
+        </member>
+        <member name="T:TemplateApi.Filters.TokenValidateFilter">
+            <summary>
+            读取Token
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Filters.TokenValidateFilter.Order">
+            <summary>
+            越小优先级越高
+            </summary>
+        </member>
+        <member name="T:TemplateApi.CacheAttribute">
+            <summary>
+            缓存属性
+            </summary>
+        </member>
+        <member name="P:TemplateApi.CacheAttribute.CacheTitle">
+            <summary>
+            缓存标题
+            </summary>
+        </member>
+        <member name="M:TemplateApi.CacheAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
+        <member name="M:TemplateApi.CacheAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+             <summary>
+            执行后
+             </summary>
+             <param name="actionExecutedContext"></param>
+        </member>
+        <member name="M:TemplateApi.CacheAttribute.GetResponseValues(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            读取action返回的result
+            </summary>
+            <param name="actionExecutedContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.LogAttribute">
+            <summary>
+            日志属性
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.#ctor(System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:TemplateApi.LogAttribute.LogTitle">
+            <summary>
+            日志标题
+            </summary>
+        </member>
+        <member name="P:TemplateApi.LogAttribute.ModelName">
+            <summary>
+            模型名
+            </summary>
+        </member>
+        <member name="P:TemplateApi.LogAttribute.PropName">
+            <summary>
+            属性名
+            </summary>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+             <summary>
+            
+             </summary>
+             <param name="context"></param>
+        </member>
+        <member name="M:TemplateApi.LogAttribute.FilterPropName(System.String)">
+            <summary>
+            过滤属性日志记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TemplateApi.Models.AuditRequest">
+            <summary>
+            审核请求
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.AuditRequest.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.AuditRequest.Opinion">
+            <summary>
+            意见
+            </summary>
+        </member>
+        <member name="T:TemplateApi.Models.Filter.BusinessAcceptanceFilter">
+            <summary>
+            业务受理查询条件
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.BusinessAcceptanceFilter.index">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.BusinessAcceptanceFilter.size">
+            <summary>
+            每頁数量
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.BusinessAcceptanceFilter.eventName">
+            <summary>
+            事项名称
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.BusinessAcceptanceFilter.startDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.BusinessAcceptanceFilter.endDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.BusinessAcceptanceFilter.IsAccepance">
+            <summary>
+            是否已受理
+            </summary>
+        </member>
+        <member name="T:TemplateApi.Models.Filter.ReplenishLogFilter">
+            <summary>
+            补齐补正日志查询条件
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.ReplenishLogFilter.index">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.ReplenishLogFilter.size">
+            <summary>
+            每页数量
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.ReplenishLogFilter.startDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.ReplenishLogFilter.endDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.ReplenishLogFilter.name">
+            <summary>
+            申请人
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.Filter.ReplenishLogFilter.IsRelenish">
+            <summary>
+            是否已补齐补正
+            </summary>
+        </member>
+        <member name="T:TemplateApi.Models.LoginResponse">
+            <summary>
+            登录返回
+            </summary>
+        </member>
+        <member name="P:TemplateApi.Models.LoginResponse.Token">
+            <summary>
+            登录Token
+            </summary>
+        </member>
+        <member name="T:Qj.Api.EnumHelperController">
+            <summary>
+            枚举获取
+            </summary>
+        </member>
+        <member name="M:Qj.Api.EnumHelperController.RepeatEnum">
+            <summary>
+            用户角色
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
